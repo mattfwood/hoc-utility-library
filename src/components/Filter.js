@@ -16,7 +16,7 @@ function Filter(props) {
 };
 
 Filter.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.oneOf([PropTypes.string, PropTypes.object])),
+  data: PropTypes.arrayOf(PropTypes.oneOf([PropTypes.string, PropTypes.object])).required,
 }
 
 export default Filter;

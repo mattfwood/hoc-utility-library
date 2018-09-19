@@ -25,7 +25,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.2",
+    "babel-eslint": "^9.0.0",
     "babel-jest": "^22.4.1",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
@@ -38,7 +38,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.18.2",
-    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
@@ -48,6 +48,7 @@
     "purecss": "^1.0.0",
     "react": "^16.2.0",
     "react-addons-test-utils": "^15.6.2",
+    "react-dev-utils": "^5.0.2",
     "react-dom": "^16.2.0",
     "react-github-corner": "^2.1.0",
     "rimraf": "^2.6.2",
@@ -84,5 +85,8 @@
   "license": "MIT",
   "pre-push": [
     "test"
-  ]
+  ],
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  }
 }

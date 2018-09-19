@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Filter = (props) => {
+function Filter(props) {
   const { search, data } = props;
 
   const filteredData = data.filter((item) => {

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Filter = (props) => {
   const { search, data } = props;
 
@@ -12,5 +14,9 @@ const Filter = (props) => {
 
   return props.children(filteredData);
 };
+
+Filter.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.oneOf([PropTypes.string, PropTypes.object])),
+}
 
 export default Filter;

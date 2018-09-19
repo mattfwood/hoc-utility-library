@@ -1,9 +1,9 @@
 {
-  "name": "react-component-boilerplate",
-  "description": "Boilerplate for React.js components",
-  "author": "Juho Vepsalainen",
-  "user": "survivejs",
-  "version": "6.1.2",
+  "name": "hoc-utility-library",
+  "description": "Higher Order Utility Components",
+  "author": "Matt Wood",
+  "user": "mattfwood",
+  "version": "0.0.1",
   "scripts": {
     "start": "catalog start docs",
     "test": "jest",

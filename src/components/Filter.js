@@ -1,18 +1,30 @@
 import PropTypes from 'prop-types';
 
 function Filter(props) {
-  const { search, data } = props;
+  try {
+    const { search, data } = props;
 
-  const filteredData = data.filter((item) => {
-    const jsonItem = JSON.stringify(item).toLowerCase();
-    return jsonItem.includes(search.toLowerCase());
-    // const strings = Object.values(item).filter(value => typeof value === 'string' || typeof value === 'number');
-    // const match = strings.some(value => value.toLowerCase().includes(search.toLowerCase()));
-    // console.log({ strings, match });
-    // return match;
-  });
+    if (!Array.isArray(data)) {
+      throw new TypeError('Filter prop "data" must be an array');
+    }
 
-  return props.children(filteredData);
+    if (typeof search !== 'string' && typeof search !== 'number') {
+      throw new TypeError('Filter prop "search" must be type "string" or "number"');
+    }
+
+    const filteredData = data.filter((item) => {
+      const jsonItem = JSON.stringify(item).toLowerCase();
+      return jsonItem.includes(search.toLowerCase());
+      // const strings = Object.values(item).filter(value => typeof value === 'string' || typeof value === 'number');
+      // const match = strings.some(value => value.toLowerCase().includes(search.toLowerCase()));
+      // console.log({ strings, match });
+      // return match;
+    });
+
+    return props.children(filteredData);
+  } catch (e) {
+    throw e;
+  }
 };
 
 Filter.propTypes = {

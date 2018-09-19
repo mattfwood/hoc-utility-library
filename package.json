@@ -16,7 +16,7 @@
     "dist:modules": "del-cli ./dist-modules && cross-env BABEL_ENV=modules babel ./src --out-dir ./dist-modules",
     "preversion": "npm run test",
     "prepublishOnly": "npm run dist:es6 && npm run dist:modules",
-    "__ignore__postpublish": "npm run gh-pages && npm run gh-pages:deploy",
+    "postpublish": "npm run gh-pages && npm run gh-pages:deploy",
     "postinstall": "node lib/post_install.js"
   },
   "main": "dist-modules",

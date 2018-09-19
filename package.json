@@ -60,7 +60,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/survivejs/react-component-boilerplate.git"
+    "url": "https://github.com/mattfwood/hoc-utility-library.git"
   },
   "homepage": "https://github.com/mattfwood/hoc-utility-library",
   "bugs": {

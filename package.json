@@ -62,9 +62,9 @@
     "type": "git",
     "url": "https://github.com/survivejs/react-component-boilerplate.git"
   },
-  "homepage": "https://survivejs.github.io/react-component-boilerplate/",
+  "homepage": "https://github.com/mattfwood/hoc-utility-library",
   "bugs": {
-    "url": "https://github.com/survivejs/react-component-boilerplate/issues"
+    "url": "https://github.com/mattfwood/hoc-utility-library/issues"
   },
   "jest": {
     "collectCoverage": true,

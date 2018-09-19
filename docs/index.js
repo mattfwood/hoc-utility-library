@@ -28,7 +28,8 @@ const pages = [
         path: 'components',
         title: 'Filter',
         content: pageLoader(() => import('./filter.md')),
-        imports: { Filter: require('../src/components/Filter')}
+        // imports: { Filter: require('../src/components/Filter')}
+        imports: { Filter: require('../src/components/Filter') }
       }
     ]
   }

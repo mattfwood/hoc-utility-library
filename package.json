@@ -51,6 +51,7 @@
     "react-dev-utils": "^5.0.2",
     "react-dom": "^16.2.0",
     "react-github-corner": "^2.1.0",
+    "request": "^2.88.0",
     "rimraf": "^2.6.2",
     "sync-exec": "^0.6.2",
     "webpack": "^3.10.0"
